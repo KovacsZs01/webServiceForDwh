@@ -1,0 +1,270 @@
+/* Introduction Page Styles */
+.introduction-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.introduction-content {
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.98);
+  min-height: 100vh;
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.main-title {
+  font-size: 28pt;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Industry Label Section */
+.industry-label-section {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(53, 58, 221, 0.08), rgba(90, 103, 216, 0.12));
+  border-radius: 15px;
+  border: 2px solid rgba(53, 58, 221, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(53, 58, 221, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.industry-label-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: inherit;
+}
+
+.industry-label-title {
+  font-size: 16pt;
+  font-weight: 600;
+  color: #353ADD;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.industry-label-subtitle {
+  font-size: 12pt;
+  color: #5a67d8;
+  margin: 0;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+/* Overview Section */
+.overview-section {
+  margin: 3rem 0;
+  color: #2c3e50;
+}
+
+.subsection {
+  margin: 2.5rem 0;
+  padding: 0;
+}
+
+.subsection-title {
+  font-size: 15pt;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+.subsection-text {
+  font-size: 13pt;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0 0 1rem 0;
+  text-align: justify;
+}
+
+/* Industry Links Section */
+.industry-links-section {
+  margin: 4rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(53, 58, 221, 0.1);
+}
+
+.industry-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.industry-link-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(53, 58, 221, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.industry-link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(53, 58, 221, 0.15);
+  border-color: rgba(53, 58, 221, 0.2);
+}
+
+.industry-card-title {
+  font-size: 15pt;
+  font-weight: 600;
+  color: #353ADD;
+  margin: 0 0 0.75rem 0;
+  text-decoration: none;
+}
+
+.industry-card-description {
+  font-size: 13pt;
+  line-height: 1.5;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Charts Container */
+.charts-container {
+  margin: 4rem 0;
+}
+
+/* Chart Section */
+.chart-section {
+  margin: 3rem 0;
+  position: relative;
+  padding: 2rem;
+}
+
+.chart-container {
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.chart-title {
+  font-size: 18pt;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.chart-description {
+  font-size: 11pt;
+  color: #6c757d;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Chart Decorations */
+.chart-decoration-left {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60px;
+  background: linear-gradient(45deg, #353ADD, #5a67d8);
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.chart-decoration-right {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60px;
+  background: linear-gradient(45deg, #353ADD, #5a67d8);
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+/* Data Sources Section */
+.data-sources {
+  margin: 3rem 0 2rem 0;
+  padding: 2rem;
+  background: rgba(248, 249, 250, 0.8);
+  border-radius: 15px;
+  border: 1px solid rgba(53, 58, 221, 0.1);
+}
+
+.sources-title {
+  font-size: 14pt;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 1.5rem 0;
+}
+
+.sources-content {
+  margin: 0;
+}
+
+.sources-paragraph {
+  font-size: 10pt;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0 0 1rem 0;
+}
+
+.sources-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .introduction-content {
+    padding: 1rem;
+  }
+  
+  .industry-links-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .main-title {
+    font-size: 24pt;
+  }
+  
+  .industry-label-title {
+    font-size: 14pt;
+  }
+  
+  .subsection-title {
+    font-size: 13pt;
+  }
+}
